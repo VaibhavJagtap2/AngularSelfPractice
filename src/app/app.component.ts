@@ -6,15 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'blog app';
-  name = "Vaibhav"
-
-  getName(){
-    return this.name
+  appName = 'blog app';
+  yourName="Pratiksha"
+  getName(name: any)
+  {
+    alert(name)
   }
-  obj={
-    name: 'Anita',
-    age : 49
-  }
-  arr=['Anita','Vaibhav',"Pratiksha"]
 }
