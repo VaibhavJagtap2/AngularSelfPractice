@@ -1,6 +1,22 @@
-<h1>Angular InterPolation</h1>
+<!-- <h1>Angular InterPolation</h1> -->
 <!-- <button (click)="getName('Anita')">get my name</button> -->
-<button (click)="getName(yourName)">get my name</button>
+<!-- <button (click)="getName(yourName)">get my name</button> -->
 <!-- <app-user-list></app-user-list> -->
 <!-- <app-login></app-login>
 <app-signup></app-signup> -->
+
+<!-- Events in angular(click, keyup, keywith enter and sapce, keydown)-->
+
+<h1>Important Events in Angular</h1>
+<button (click)="myEvent('click event')"> click me</button>
+<br> <br>
+<!-- <input type="text" (keyup)="myEvent('keyup')"/>  using keyup event -->
+<!-- <input type="text" #box (keyup)="myEvent(box.value)"/>  using ID values-->
+<!-- <input type="text" #box (keyup.enter)="myEvent(box.value)"/> using Enter key only get output after pressing Enter -->
+<!-- <input type="text" #box (keydown)="myEvent(box.value)"/>  -->
+<!-- <input type="text" #box (blur)="myEvent('blue event')"/>  -->
+<!-- use for mouseover when we get the event after over the mouse-->
+<div (mouseleave)="myEvent('New Event')"
+style="background-color: skyblue;">
+    Mouse Events
+</div>
